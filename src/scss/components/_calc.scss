@@ -25,7 +25,7 @@
 
   &__inner {
     position: relative;
-    z-index: 5;
+    z-index: 10;
   }
 
   &__row {
@@ -107,6 +107,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    position: relative;
+    z-index: 5;
   }
 
   &__form-link {
