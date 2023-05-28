@@ -15,3 +15,11 @@ const exampleSwiper = new Swiper('.example__swiper', {
     el: '.swiper-pagination'
   }
 });
+
+const locSwiper = new Swiper('.loc__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 35,
+  pagination: {
+    el: '.swiper-pagination'
+  }
+});

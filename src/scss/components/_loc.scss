@@ -1,0 +1,153 @@
+.loc {
+  padding-top: 45px;
+  padding-bottom: 90px;
+
+  &__head {
+    text-align: center;
+    margin-bottom: 45px;
+
+    p {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #58C889;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__inner {}
+
+  &__swiper {
+    padding-bottom: 40px;
+
+    .swiper-pagination {
+      bottom: 0;
+    }
+
+    .swiper-slide {
+      max-width: 273px;
+    }
+  }
+
+  &__item {
+    max-width: 273px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 110%;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  &__item-about {
+    max-width: 220px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 110%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__item-phone {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 45px;
+
+    img {
+      flex-shrink: 0;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 110%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__item-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #DB3B88;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 26px;
+    display: inline-block;
+    border: 2px solid #db3d89;
+    border-radius: 7px;
+    margin-top: auto;
+  }
+}
+
+.container {}
+
+.swiper {}
+
+.swiper-wrapper {}
