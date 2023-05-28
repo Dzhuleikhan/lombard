@@ -1,0 +1,67 @@
+.garant {
+  padding: 90px 0 100px;
+
+  &__head {
+    text-align: center;
+    margin-bottom: 65px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 140%;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    row-gap: 65px;
+  }
+
+  &__item {
+    max-width: 262px;
+
+    img {
+      max-width: 110px;
+      margin: 0 auto 25px;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.075) 3.93%, rgba(255, 255, 255, 0.1365) 64.25%, rgba(255, 255, 255, 0.0435) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

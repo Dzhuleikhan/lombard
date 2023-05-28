@@ -60,6 +60,8 @@ a {
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
   padding-top: 82px;
+  background: url('../img/page-bg.png') no-repeat center;
+  background-size: cover;
 }
 
 .is-hidden {
