@@ -1,0 +1,185 @@
+.example {
+  padding: 90px 0;
+
+  h2 {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    text-transform: uppercase;
+    background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+
+  .example__swiper-prev {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    cursor: pointer;
+  }
+  .example__swiper-next {
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  &__swiper {
+    padding: 55px 0;
+
+
+    .swiper-slide {
+      max-width: 360px;
+    }
+  }
+
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #FDD7EA;
+  opacity: 1;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+
+  &-active {
+    background: #DB3B88;
+  }
+}
+
+
+
+
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07), 0px 4px 35px rgba(0, 0, 0, 0.07);
+  border-radius: 25px;
+  padding: 20px 20px 32px;
+  max-width: 360px;
+
+  &__img {
+    max-width: 320px;
+    margin-bottom: 20px;
+    border-radius: 11px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+
+  &__chars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__chars-item {
+    background: linear-gradient(110.37deg, rgba(207, 239, 221, 0.2) 11.25%, rgba(207, 239, 221, 0) 49.18%, rgba(207, 239, 221, 0.2) 81.55%);
+    border: 2px solid #CFEFDD;
+    border-radius: 7px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__price {
+    text-align: center;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__date {
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
