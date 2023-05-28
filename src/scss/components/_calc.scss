@@ -1,0 +1,214 @@
+.calc {
+  padding: 90px 0 0;
+
+  &__wrapper {
+    background: url('../img/calc-bg.png') no-repeat center;
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 60px 75px;
+    position: relative;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    text-transform: uppercase;
+    background: linear-gradient(286.71deg, #FFFFFF 33.98%, #F5F5F5 59.91%, #FFFFFF 74.13%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__row {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background: linear-gradient(286.71deg, #FFFFFF 33.98%, #F5F5F5 59.91%, #FFFFFF 74.13%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  &__row-inner {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    input {
+      outline: none;
+      width: 100%;
+      max-width: 288px;
+      padding: 23px 15px;
+      background: #FFFFFF;
+      box-shadow: inset -2px -5px 12px rgba(0, 0, 0, 0.06), inset 2px 2px 12px rgba(0, 0, 0, 0.14);
+      border-radius: 7px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #9A9A9A;
+      }
+    }
+  }
+
+  &__row-amount {
+    p:nth-child(1) {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(286.71deg, #FFFFFF 33.98%, #F5F5F5 59.91%, #FFFFFF 74.13%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 5px;
+    }
+
+    p:nth-child(2) {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 140%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      background: linear-gradient(286.71deg, #FFFFFF 33.98%, #F5F5F5 59.91%, #FFFFFF 74.13%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__btns {
+    margin-top: 35px;
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  &__form-link {
+    padding: 27px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #DB3B88;
+    box-shadow: 0px 5px 0px #C23D85, inset 0px 4px 24px rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+
+    &:hover {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(94.48deg, rgba(255, 255, 255, 0) -8.98%, rgba(255, 255, 255, 0.4408) 33.92%, rgba(255, 255, 255, 0) 115.98%), #E9388D;
+      box-shadow: 0px 5px 0px #DA519B, inset 0px 4px 24px rgba(255, 255, 255, 0.25);
+      border-radius: 7px;
+    }
+
+    &:active {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #D93685;
+      box-shadow: 0px 5px 0px #C23D85, inset 0px -11px 33px rgba(46, 28, 37, 0.1), inset 0px 4px 24px rgba(255, 255, 255, 0.25);
+      border-radius: 7px;
+    }
+  }
+
+  &__reset {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #fff;
+
+    &:hover {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(94.48deg, rgba(255, 255, 255, 0) -8.98%, rgba(255, 255, 255, 0.4408) 33.92%, rgba(255, 255, 255, 0) 115.98%), #E9388D;
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    &:active {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #D93685;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+.choices {
+  width: 100%;
+  max-width: 288px;
+  margin-bottom: 0;
+
+  &::after {
+    border: none !important;
+    width: 16px !important;
+    height: 9px !important;
+    background: url('../img/arrow-down.svg') no-repeat center !important;
+    right: 20px !important;
+  }
+
+  &.is-open::after {
+    transform: rotate(-180deg) !important;
+    top: 45%;
+    margin-top: 0 !important;
+  }
+}
+
+.choices__item--selectable::after {
+  display: none !important;
+}
+
+.choices__item--selectable {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 20px;
+}
+
+.choices__inner {
+  padding-top: 19px !important;
+  padding-bottom: 19px !important;
+  background: #FFFFFF;
+  box-shadow: inset -2px -5px 12px rgba(0, 0, 0, 0.06), inset 2px 2px 12px rgba(0, 0, 0, 0.14);
+  border-radius: 7px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}

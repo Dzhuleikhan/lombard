@@ -1,0 +1,57 @@
+<section class="calc">
+  <div class="container calc__container">
+    <div class="calc__wrapper">
+      <h2>Калькулятор <br> займа онлайн</h2>
+      <div class="calc__inner">
+        <div class="calc__row">
+          <p class="calc__row-title">Стоимость техники</p>
+          <div class="calc__row-inner">
+            <input class="input-reset" type="number" placeholder="Введите стоимость техники">
+            <div class="calc__row-amount">
+              <p>Готовы выдать на руки</p>
+              <p><span>6 400 000</span> р.</p>
+            </div>
+          </div>
+        </div>
+        <div class="calc__row">
+          <p class="calc__row-title">Сумма займа</p>
+          <div class="calc__row-inner">
+            <input id="amountPerMonth" class="input-reset" type="number" placeholder="Введите сумму">
+            <div class="calc__row-amount">
+              <p>Стоимость займа</p>
+              <p><span>30 000</span> р.</p>
+            </div>
+          </div>
+        </div>
+        <div class="calc__row">
+          <p class="calc__row-title">Срок займа</p>
+          <div class="calc__row-inner">
+            <select name="days" id="days">
+              <option value="1">30 дней</option>
+              <option value="6">6 месяцев</option>
+              <option value="12">12 месяцев</option>
+            </select>
+            <div class="calc__row-amount">
+              <p>Процент займа</p>
+              <p>3% в месяц</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calc__btns">
+        <a class="calc__form-link red-btn" href="#">
+          Отправить заявку
+        </a>
+        <button class="btn-reset calc__reset">
+          Рассчитать заново
+        </button>
+      </div>
+      <div class="calc__img">
+        <picture>
+          <source srcset="./img/calc-img.webp" type="image/webp">
+          <img loading="lazy" src="./img/calc-img.png" class="image" width="677" height="678" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
