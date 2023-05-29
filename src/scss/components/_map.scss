@@ -129,3 +129,10 @@
   position: relative;
   z-index: 5;
 }
+
+
+@media (max-width: 500px) {
+  .map__inner {
+    display: none;
+  }
+}
