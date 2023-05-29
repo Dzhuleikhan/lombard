@@ -217,6 +217,12 @@
   }
 }
 
+@media (max-width: 760px) {
+  .example {
+    padding-bottom: 55px;
+  }
+}
+
 @media (max-width: 630px) {
   .example__container {
     padding-left: 0;

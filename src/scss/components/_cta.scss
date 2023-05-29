@@ -116,6 +116,7 @@
 }
 
 .custom-checkbox {
+  grid-column: span 3;
 
   &__field {}
 
@@ -130,5 +131,95 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .cta {
+    padding-bottom: 0;
+  }
+
+  .cta__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cta__wrapper {
+    border-radius: 0;
+    padding: 35px 45px 45px;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .form__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .cta {
+    padding-top: 0;
+  }
+
+  .cta__head {
+    margin-bottom: 8px;
+
+    h2 {
+      font-size: 22px;
+      line-height: 130%;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  .form__group {
+
+    p {
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 7px;
+    }
+
+    input {
+      padding: 17px 15px;
+      font-size: 14px;
+      line-height: 140%;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .form__row {
+    gap: 14px;
+  }
+
+  .form__btn {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 21px;
+    order: 5;
+  }
+
+  .custom-checkbox__content {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .custom-checkbox {
+    padding-left: 30px;
   }
 }

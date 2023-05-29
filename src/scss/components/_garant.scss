@@ -62,8 +62,18 @@
       span {
         font-weight: 600;
       }
+
     }
   }
+}
+
+#pdf {
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  color: #57a879;
 }
 
 
