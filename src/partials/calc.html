@@ -3,34 +3,40 @@
     <div class="calc__wrapper">
       <h2>Калькулятор <br> займа онлайн</h2>
       <div class="calc__inner">
-        <div class="calc__row">
-          <p class="calc__row-title">Стоимость техники</p>
-          <div class="calc__row-inner">
-            <input id="tech-sum" class="input-reset" type="number" placeholder="Введите стоимость техники">
+        <div class="calc__cols">
+          <div class="calc__cols-left">
+            <div class="calc__row">
+              <p class="calc__row-title">Стоимость техники</p>
+              <div class="calc__row-inner">
+                <input id="tech-sum" class="input-reset" type="number" placeholder="Введите стоимость техники">
+              </div>
+            </div>
+            <div class="calc__row">
+              <p class="calc__row-title">Сумма займа</p>
+              <div class="calc__row-inner">
+                <input id="amountPerMonth" class="input-reset" type="number" placeholder="Введите сумму">
+              </div>
+            </div>
+            <div class="calc__row">
+              <p class="calc__row-title">Срок займа</p>
+              <div class="calc__row-inner">
+                <select name="days" id="days">
+                  <option value="1">30 дней</option>
+                  <option value="6">6 месяцев</option>
+                  <option value="12">12 месяцев</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="calc__cols-right">
             <div class="calc__row-amount">
               <p>Готовы выдать на руки</p>
               <p><span id="onHanAmount">6 400 000</span> р.</p>
             </div>
-          </div>
-        </div>
-        <div class="calc__row">
-          <p class="calc__row-title">Сумма займа</p>
-          <div class="calc__row-inner">
-            <input id="amountPerMonth" class="input-reset" type="number" placeholder="Введите сумму">
             <div class="calc__row-amount">
               <p>Стоимость займа</p>
               <p><span id="monthly">30 000</span> р.</p>
             </div>
-          </div>
-        </div>
-        <div class="calc__row">
-          <p class="calc__row-title">Срок займа</p>
-          <div class="calc__row-inner">
-            <select name="days" id="days">
-              <option value="1">30 дней</option>
-              <option value="6">6 месяцев</option>
-              <option value="12">12 месяцев</option>
-            </select>
             <div class="calc__row-amount">
               <p>Процент займа</p>
               <p>3% в месяц</p>

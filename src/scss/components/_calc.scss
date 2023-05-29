@@ -199,7 +199,8 @@
   line-height: 140%;
 }
 
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
   padding: 20px;
 }
 
@@ -213,4 +214,131 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+}
+
+.calc__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 620px;
+  gap: 35px;
+
+  &-left {
+    // max-width: 288px;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 57px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .calc__img {
+    right: -260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .calc__img {
+    display: none;
+  }
+
+  .calc__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .calc__wrapper {
+    border-radius: 0;
+    padding: 35px 45px;
+  }
+}
+
+@media (max-width: 760px) {
+  .calc {
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .calc {
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .calc__cols {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .calc__cols-right {
+    gap: 20px;
+  }
+
+  .calc__row-amount {
+    text-align: center;
+  }
+
+  .calc__btns {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 25px auto 0;
+
+    a {
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .calc {
+
+    h2 {
+      font-size: 22px;
+      line-height: 130%;
+      margin-bottom: 14px;
+    }
+  }
+
+  .calc__cols {
+    gap: 20px;
+  }
+
+  .calc__row-title {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .calc__row-inner input {
+    padding: 14px 15px;
+    font-size: 14px;
+    line-height: 140%;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  .calc__row:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .calc__form-link {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 21px;
+  }
+  .calc__reset {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 21px;
+  }
 }
