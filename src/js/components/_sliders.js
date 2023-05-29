@@ -13,6 +13,18 @@ const exampleSwiper = new Swiper('.example__swiper', {
   },
   pagination: {
     el: '.swiper-pagination'
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 14,
+      loop: false,
+      centeredSlides: false
+    },
+    500: {
+      spaceBetween: 35,
+      loop: true,
+      centeredSlides: true
+    }
   }
 });
 
