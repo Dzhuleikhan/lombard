@@ -31,6 +31,10 @@ const exampleSwiper = new Swiper('.example__swiper', {
 const locSwiper = new Swiper('.loc__swiper', {
   slidesPerView: 'auto',
   spaceBetween: 35,
+  navigation: {
+    prevEl: '.loc__swiper-prev',
+    nextEl: '.loc__swiper-next'
+  },
   pagination: {
     el: '.swiper-pagination'
   }
