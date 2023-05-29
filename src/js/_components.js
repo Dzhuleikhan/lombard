@@ -1,3 +1,5 @@
+import './components/_header'
+import './components/_burger'
 import './components/_sliders'
 import './components/_select'
 import './components/_map'
