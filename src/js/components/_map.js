@@ -41,7 +41,22 @@ function init() {
   map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
   // map.controls.remove('zoomControl'); // удаляем контрол зуммирования
   map.controls.remove('rulerControl'); // удаляем контрол правил
-  // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+  map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+
+  const mediaQuery = window.matchMedia('(max-width: 500px)')
+
+  function handleTabletChange(e) {
+    if (e.matches) {
+      map.behaviors.disable(['drag']);
+    }
+  }
+
+  // Register event listener
+  mediaQuery.addListener(handleTabletChange)
+
+  // Initial check
+  handleTabletChange(mediaQuery)
 
   map.geoObjects.add(dinamo)
   map.geoObjects.add(tushino)

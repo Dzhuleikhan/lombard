@@ -18,9 +18,9 @@ const exampleSwiper = new Swiper('.example__swiper', {
     320: {
       spaceBetween: 14,
       loop: false,
-      centeredSlides: false
+      centeredSlides: false,
     },
-    500: {
+    430: {
       spaceBetween: 35,
       loop: true,
       centeredSlides: true
@@ -30,12 +30,23 @@ const exampleSwiper = new Swiper('.example__swiper', {
 
 const locSwiper = new Swiper('.loc__swiper', {
   slidesPerView: 'auto',
-  spaceBetween: 35,
+  spaceBetween: 20,
   navigation: {
     prevEl: '.loc__swiper-prev',
     nextEl: '.loc__swiper-next'
   },
   pagination: {
     el: '.swiper-pagination'
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 14,
+      loop: false,
+      centeredSlides: false,
+    },
+    430: {
+      loop: true,
+      centeredSlides: false
+    }
   }
 });

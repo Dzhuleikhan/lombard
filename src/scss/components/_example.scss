@@ -86,12 +86,14 @@
 
   &__img {
     max-width: 320px;
+    height: 235px;
     margin-bottom: 20px;
     border-radius: 11px;
     overflow: hidden;
 
     img {
       width: 100%;
+      height: 100%;
       display: block;
     }
   }
@@ -195,9 +197,7 @@
 
 @media (max-width: 1200px) {
   .example__swiper-btns {
-    position: absolute;
-    right: 35px;
-    top: -25px;
+    display: none;
   }
 
   .example__swiper-prev,
@@ -239,7 +239,7 @@
   }
 
   .example {
-    padding: 45px 0 0;
+    padding: 45px 0;
   }
 }
 
@@ -248,24 +248,24 @@
   .example h2 {
     font-size: 22px;
     max-width: 290px;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding-left: 0;
   }
 
   .example__swiper {
-    padding: 20px 22px;
-
-    .swiper-pagination {
-      display: none;
-    }
+    padding: 20px 22px 60px;
   }
 
   .card {
-    padding: 11px 11px 17px;
-    max-width: 200px;
+    padding: 20px;
+    max-width: 300px;
     border-radius: 14px;
 
     &__img {
-      height: 132px;
+      height: 172px;
       margin-bottom: 10px;
+      border-radius: 6px;
     }
 
     &__name {
@@ -277,6 +277,8 @@
 
   .card__chars {
     margin-bottom: 8px;
+    justify-content: center;
+    gap: 8px;
   }
 
   .card__chars-item {
@@ -295,7 +297,7 @@
   }
 
   .example__swiper .swiper-slide {
-    max-width: 200px;
+    max-width: 300px;
   }
 
   .card__price {
@@ -320,4 +322,8 @@
       line-height: 140%;
     }
   }
+}
+
+@media (max-width: 430px) {
+
 }

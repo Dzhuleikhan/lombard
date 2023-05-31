@@ -88,6 +88,10 @@
     }
   }
 
+  .header__cta-tel {
+    display: none;
+  }
+
   &__cta-whatsapp {
     background: #5FCC92;
     box-shadow: inset 0px 0px 3px #FFFFFF;
@@ -97,6 +101,13 @@
     background: #1396F4;
     box-shadow: inset 0px 0px 3px #FFFFFF;
   }
+
+  &__cta-tel {
+    background: #DB3B88;
+    box-shadow: inset 0px 0px 3px #FFFFFF;
+    display: none;
+  }
+
 
   &__cta-phone {
     display: inline-block;
@@ -155,6 +166,7 @@
   @include burger;
 
   display: none;
+  flex-shrink: 0;
 }
 
 @media (max-width: 1050px) {
@@ -165,6 +177,21 @@
   .header__right {
     justify-content: flex-end;
     width: auto;
+    margin-left: auto;
+  }
+
+  .header__cta-phone {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    z-index: 200;
+  }
+
+  .header .header__cta-tel {
+    display: flex;
   }
 }
 
@@ -173,14 +200,9 @@
     display: none;
   }
 
-  .header__right {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    position: relative;
-    z-index: 200;
+  .header__cta-socials a {
+    width: 25px;
+    height: 25px;
   }
 
   .header {

@@ -39,15 +39,16 @@
 
     .swiper-pagination {
       bottom: 0;
+      display: none;
     }
 
     .swiper-slide {
-      max-width: 273px;
+      max-width: 224px;
     }
   }
 
   &__item {
-    max-width: 273px;
+    max-width: 224px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -79,7 +80,7 @@
 
     h4 {
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 110%;
       font-feature-settings: 'pnum' on, 'lnum' on;
       background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
@@ -92,7 +93,7 @@
 
     p {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 140%;
       font-feature-settings: 'pnum' on, 'lnum' on;
       background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
@@ -115,7 +116,7 @@
 
     span {
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 110%;
       font-feature-settings: 'pnum' on, 'lnum' on;
       background: linear-gradient(287.2deg, rgba(255, 255, 255, 0.175) 3.93%, rgba(255, 255, 255, 0.3185) 64.25%, rgba(255, 255, 255, 0.1015) 102.03%), #0E0E0E;
@@ -128,12 +129,12 @@
 
   &__item-btn {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 17px;
     letter-spacing: 0.11em;
     text-transform: uppercase;
     color: #db3d89;
-    padding: 26px;
+    padding: 25px;
     display: inline-block;
     border: 2px solid #db3d89;
     border-radius: 7px;
@@ -174,33 +175,25 @@
       line-height: 140%;
       text-align: left;
       margin-bottom: 7px;
+      text-align: center;
     }
 
     h2 {
       font-size: 22px;
       line-height: 140%;
-      text-align: left;
-      max-width: 240px;
+      text-align: center;
     }
-  }
-
-  .loc__swiper-btns {
-    display: flex;
-    gap: 15px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
 
   .loc__item {
-    max-width: 220px;
-
-    h3 {
-      font-size: 16px;
-      line-height: 110%;
-      margin-bottom: 20px;
-    }
+    max-width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
   }
+
+
 
   .loc__item-about {
 
@@ -245,17 +238,44 @@
     line-height: 17px;
     padding: 22px;
     display: inline-block;
+    text-align: center;
   }
 
   .loc__swiper {
-    padding-bottom: 0;
-
-    .swiper-pagination {
-      display: none;
-    }
 
     .swiper-slide {
-      max-width: 220px;
+      max-width: 300px;
+    }
+
+    .swiper-pagination {
+      display: flex;
     }
   }
+}
+
+
+@media (max-width: 400px) {
+  .loc__item {
+    max-width: 100%;
+  }
+
+  .loc__swiper {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .swiper-slide {
+      max-width: 100%;
+    }
+  }
+
+  .loc__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .loc__head {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
 }
