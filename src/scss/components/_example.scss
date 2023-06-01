@@ -325,5 +325,22 @@
 }
 
 @media (max-width: 430px) {
+  .example__swiper .swiper-slide {
+    max-width: 100%;
+  }
 
+  .card {
+    max-width: 100%;
+  }
+
+  .card__img {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card__img {
+    height: 172px;
+  }
 }

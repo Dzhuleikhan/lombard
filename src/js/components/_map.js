@@ -71,31 +71,26 @@ function init() {
 
   dinamo.events.add(['click'],  function (e) {
     address.textContent = 'Москва, Ленинградский проспект, 37, к. 9 Бизнес-отель «Аэростар», офис 604, 4 подъезд'
-    geo.textContent = '55.7905500689469 / 37.54738699999998'
     phone.textContent = '+7 (495) 518 80 81'
     title.textContent = 'Филиал Динамо'
   })
   tushino.events.add(['click'],  function (e) {
     address.textContent = 'Москва, ул. Лодочная, д.3, с.1А.'
-    geo.textContent = '55.83672106888657 / 37.445949499999884'
     phone.textContent = '+7 (985) 222 89 19'
     title.textContent = 'Филиал Тушино'
   })
   marino.events.add(['click'],  function (e) {
     address.textContent = 'Москва, ул. Нижние поля, 27, с. 11'
-    geo.textContent = '55.658809569055215 / 37.7341285'
     phone.textContent = '+7 (495) 506 17 77'
     title.textContent = 'Филиал Марьино'
   })
   rumyancevo.events.add(['click'],  function (e) {
     address.textContent = 'Москва, Киевское ш., 4с2в, БЦ "Румянцево"'
-    geo.textContent = '55.63474556911239 / 37.439077000000005'
     phone.textContent = '+7 (985) 222 92 97'
     title.textContent = 'Филиал Румянцево'
   })
   mosfilm.events.add(['click'],  function (e) {
     address.textContent = 'улица Улофа Пальме, 1'
-    geo.textContent = '55.63474556911239 / 37.439077000000005'
     phone.textContent = '+7 (925) 257 77 11'
     title.textContent = 'Филиал Мосфильмовская'
   })

@@ -7,6 +7,7 @@ const exampleSwiper = new Swiper('.example__swiper', {
   spaceBetween: 35,
   loop: true,
   centeredSlides: true,
+  initialSlide: 1,
   navigation: {
     prevEl: '.example__swiper-prev',
     nextEl: '.example__swiper-next'
@@ -17,7 +18,7 @@ const exampleSwiper = new Swiper('.example__swiper', {
   breakpoints: {
     320: {
       spaceBetween: 14,
-      loop: false,
+      loop: true,
       centeredSlides: false,
     },
     430: {

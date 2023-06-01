@@ -25,6 +25,11 @@
       line-height: 16px;
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #9A9A9A;
+      text-decoration: underline;
+
+      &:hover {
+        color: #787676;
+      }
     }
   }
 
