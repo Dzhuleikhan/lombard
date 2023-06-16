@@ -1,5 +1,21 @@
-import JustValidate from 'just-validate';
+// import JustValidate from 'just-validate';
 import Inputmask from "inputmask";
+
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
+
+for (let item of rules) {
+  if (item.tel) {
+    item.rules.push({
+      rule: 'function',
+      validator: function() {
+        const phone = telSelector.inputmask.unmaskedvalue();
+        return phone.length === 10;
+      },
+      errorMessage: item.telError
+    });
+  }
+}
 
 export const validateForms = (selector, rules, afterSend) => {
   const form = document?.querySelector(selector);

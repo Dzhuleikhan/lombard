@@ -20,6 +20,9 @@ calcResetBtn.addEventListener('click', () => {
 })
 
 techSum.addEventListener('input', () => {
+  if(techSum.value > 100000000) {
+    techSum.value = 100000000
+  }
   let a = techSum.value * 0.95
   let b = zaymAmount.value = a
   let daysIndex = document.getElementById("days").selectedIndex;
