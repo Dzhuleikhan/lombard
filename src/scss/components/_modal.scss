@@ -78,6 +78,14 @@
         background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #DB3B88;
         box-shadow: 0px 3px 0px #C23D85, inset 0px 4px 24px rgba(255, 255, 255, 0.25);
         border-radius: 7px;
+
+        &:hover {
+          background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(94.48deg, rgba(255, 255, 255, 0) -8.98%, rgba(255, 255, 255, 0.4408) 33.92%, rgba(255, 255, 255, 0) 115.98%), #E9388D;
+        }
+
+        &:active {
+          background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #D93685;
+        }
       }
     }
   }
@@ -152,6 +160,14 @@
     box-shadow: 0px 3px 0px #C23D85, inset 0px 4px 24px rgba(255, 255, 255, 0.25);
     border-radius: 7px;
     margin-bottom: 20px;
+
+    &:hover {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(94.48deg, rgba(255, 255, 255, 0) -8.98%, rgba(255, 255, 255, 0.4408) 33.92%, rgba(255, 255, 255, 0) 115.98%), #E9388D;
+    }
+
+    &:active {
+      background: linear-gradient(104.79deg, rgba(255, 255, 255, 0) 23.61%, rgba(255, 255, 255, 0.23) 36.28%, rgba(255, 255, 255, 0) 48.17%), linear-gradient(93.97deg, rgba(255, 255, 255, 0) -1.8%, rgba(255, 255, 255, 0.152) 32.97%, rgba(255, 255, 255, 0) 99.49%), #D93685;
+    }
 
     span {
       font-family: 'Gilroy';
