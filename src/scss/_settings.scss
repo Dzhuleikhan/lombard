@@ -144,7 +144,21 @@ a {
 
 
 .just-validate-error-label {
-  position: absolute;
-  bottom: -20px;
+  position: relative;
+  bottom: 10px;
 }
 
+.form-1 {
+  .just-validate-error-label {
+    position: absolute;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-1 {
+    .custom-checkbox {
+      margin-top: 15px;
+    }
+  }
+}

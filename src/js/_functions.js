@@ -77,10 +77,23 @@
 // });
 
 // import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
+// const rules1 = [
+//   {
+//     ruleSelector: '.input-tel',
+//     tel: true,
+//     telError: 'Введите корректный телефон',
+//     rules: [
+//       {
+//         rule: 'required',
+//         value: true,
+//         errorMessage: 'Заполните телефон!'
+//       }
+//     ]
+//   }
+// ];
 
 // const afterForm = () => {
 //   console.log('Произошла отправка, тут можно писать любые действия');
 // };
 
-// validateForms('.form-1', rules1, afterForm);
+// validateForms('.form-2', rules1, afterForm);
